@@ -1,6 +1,6 @@
+
 package org.example.customermanagementjpa.service;
 
-import org.example.customermanagementjpa.model.Customer;
 import java.util.List;
 
 public interface IGenerateService<T> {

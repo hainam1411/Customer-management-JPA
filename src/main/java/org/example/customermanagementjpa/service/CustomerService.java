@@ -1,5 +1,6 @@
 package org.example.customermanagementjpa.service;
 
+
 import org.example.customermanagementjpa.model.Customer;
 import org.example.customermanagementjpa.repository.ICustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +10,8 @@ import java.util.List;
 
 @Service
 public class CustomerService implements ICustomerService {
-    private final ICustomerRepository iCustomerRepository;
     @Autowired
-    public CustomerService(ICustomerRepository iCustomerRepository) {
-        this.iCustomerRepository = iCustomerRepository;
-    }
+    private ICustomerRepository iCustomerRepository;
 
     @Override
     public List<Customer> findAll() {

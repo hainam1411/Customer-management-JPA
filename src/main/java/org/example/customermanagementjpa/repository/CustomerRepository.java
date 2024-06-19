@@ -1,10 +1,15 @@
 package org.example.customermanagementjpa.repository;
 
+
 import org.example.customermanagementjpa.model.Customer;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.*;
+import javax.transaction.Transactional;
 import java.util.List;
-@Component
+
+@Transactional
+@Repository
 public class CustomerRepository implements ICustomerRepository {
     @PersistenceContext
     private EntityManager entityManager;
@@ -17,7 +22,7 @@ public class CustomerRepository implements ICustomerRepository {
 
     @Override
     public Customer findById(Long id) {
-        TypedQuery<Customer> query = entityManager.createQuery("select c from Customer c where c.id=:id", Customer.class);
+        TypedQuery<Customer> query = entityManager.createQuery("select c from Customer c where  c.id=:id", Customer.class);
         query.setParameter("id", id);
         try {
             return query.getSingleResult();
@@ -42,5 +47,4 @@ public class CustomerRepository implements ICustomerRepository {
             entityManager.remove(customer);
         }
     }
-
 }

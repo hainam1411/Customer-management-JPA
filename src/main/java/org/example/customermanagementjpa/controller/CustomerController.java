@@ -1,7 +1,9 @@
+
 package org.example.customermanagementjpa.controller;
 
+
 import org.example.customermanagementjpa.model.Customer;
- import org.example.customermanagementjpa.service.ICustomerService;
+import org.example.customermanagementjpa.service.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,8 +18,11 @@ import java.util.List;
 @Controller
 @RequestMapping("/customers")
 public class CustomerController {
+    private final ICustomerService customerService;
     @Autowired
-    private ICustomerService customerService;
+    public CustomerController(ICustomerService customerService) {
+        this.customerService = customerService;
+    }
 
     @GetMapping("")
     public String index(Model model) {

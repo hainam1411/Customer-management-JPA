@@ -3,7 +3,7 @@ package org.example.customermanagementjpa.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "Customers")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
