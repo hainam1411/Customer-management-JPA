@@ -1,0 +1,15 @@
+
+—
+java:S1192&"TDefine a constant instead of duplicating this literal "redirect:/customers" 3 times.(­Â—Æ8îƒ‡ò‚2J$6fddeefb-cafa-4455-825d-a1a606b3a9cf
+Œ
+java:S1192"IDefine a constant instead of duplicating this literal "customer" 4 times.(¾’ú8îƒ‡ò‚2J$83762ab9-ccc7-4f14-ad02-419c7cf13a23
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïƒ‡ò‚2J$2dbfed9a-cb72-4f8e-a9fc-e3e05ca00ccf
+v
+java:S41440"TUpdate this method so that its implementation is not identical to "save" on line 36.(ÒØßùÿÿÿÿ8ïûŞò‚2
+b
+java:S4684$"@Replace this persistent entity with a simple POJO or DTO object.(–í üÿÿÿÿ8óûŞò‚2
+b
+java:S46840"@Replace this persistent entity with a simple POJO or DTO object.(ÒØßùÿÿÿÿ8ôûŞò‚2
+b
+java:S4684<"@Replace this persistent entity with a simple POJO or DTO object.(—´€—ÿÿÿÿÿ8õûŞò‚2
